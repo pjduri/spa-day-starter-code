@@ -24,3 +24,50 @@ table {
             padding: 10px;
             text-align: center;
 }
+
+#footer {
+	width: 100%;
+	clear: both;
+	text-align: center;
+	background-color: periwinkle;
+	opacity: 0.7;
+	height: 100px;
+	display: flex;
+	justify-content: center;
+}
+
+#pinkNails {
+    background-color: pink;
+	border: 5px outset #ea2f2f;
+	width: 50px;
+	height: 50px;
+	position: inline-block;
+	float: left;
+}
+
+#redNails {
+    background-color: red;
+	border: 5px outset #ea2f2f;
+	width: 50px;
+	height: 50px;
+	position: inline-block;
+	float: left;
+}
+
+#blueNails {
+    background-color: blue;
+	border: 5px outset #ea2f2f;
+	width: 50px;
+	height: 50px;
+	position: inline-block;
+	float: left;
+}
+
+#purpleNails {
+    background-color: purple;
+	border: 5px outset #ea2f2f;
+	width: 50px;
+	height: 50px;
+	position: inline-block;
+	float: left;
+}
