@@ -19,13 +19,15 @@
 
     <table class="table">
         <thead>
-            <th>Recommended Facial Treatments</th>
-
+            <h3>Recommended Facial Treatments</h3>
+            <br/>
             <p>The facial treatments below are recommended by our estheticians for your skin type.</p><br/>
+        </thead>
+        <tbody>
                 <tr th:each="facial : ${appropriateFacials}">
                     <td th:text="${facial}"></td>
                 </tr>
-        </thead>
+        </tbody>
     </table>
 
     <div th:if="${manipedi} == 'manicure'">
