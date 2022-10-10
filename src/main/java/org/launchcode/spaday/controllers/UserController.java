@@ -18,7 +18,7 @@ public class UserController {
         return "user/add";
     }
 
-    @PostMapping("add")
+    @PostMapping
     public String processAddUserForm(Model model, @ModelAttribute User user, String verify) {
         model.addAttribute(user);
         if(user.getPassword().equals(verify)) {
@@ -27,7 +27,7 @@ public class UserController {
         model.addAttribute("error", "Passwords Don't Match!");
         model.addAttribute("username", user.getUsername());
         model.addAttribute("email", user.getEmail());
-        return "user/add";
+        return "redirect:";
         }
 
 }
