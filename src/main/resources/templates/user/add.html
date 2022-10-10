@@ -5,32 +5,44 @@
     <link href="../static/css/styles.css" th:href="@{/css/styles.css}" rel="stylesheet" />
     <title>Sign Up</title>
 </head>
+
 <body>
-    <form method = 'post' th:action="@{/user}">
+<form method = 'post' th:action="@{/user}">
+    <div>
         <label>
             Username:
             <input type = 'text' name = 'username' th:value="${username}">
         </label>
+    </div>
 
+    <div>
         <label>
             Email:
             <input type = 'email' name = 'email' th:value="${email}">
         </label>
+    </div>
 
+    <div>
         <label>
             Password:
             <input type = 'password' name = 'password'>
         </label>
+    </div>
 
+    <div>
         <label>
             Verify Password:
             <input type = 'password' name = 'verify'>
         </label>
+    </div>
 
-        <p th:text="${error}"></p>
-
+    <div>
         <input type = 'submit' value = 'Sign Up'>
-    </form>
+    </div>
 
+    <div>
+        <p th:text="${error}"></p>
+    </div>
+</form>
 </body>
 </html>
