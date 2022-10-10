@@ -27,7 +27,7 @@ public class UserController {
         model.addAttribute("error", "Passwords Don't Match!");
         model.addAttribute("username", user.getUsername());
         model.addAttribute("email", user.getEmail());
-        return "redirect:";
+        return "/user/add";
         }
 
 }
